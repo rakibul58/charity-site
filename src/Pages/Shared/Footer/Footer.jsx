@@ -16,7 +16,8 @@ const Footer = () => {
                                 border: "0.889px solid #000",
                                 background: "var(--White, #FFF)",
                             }}>
-                            <p className="text-base font-normal text-[#000]">placeholder</p>
+                                <input type="email" className="text-base font-normal text-[#000] focus:none " placeholder="placeholder"/>
+                         
                         </div>
                         <div
                             className="h-[42px] flex justify-center items-center w-[105px] py-3 px-5"

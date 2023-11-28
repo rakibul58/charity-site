@@ -7,7 +7,7 @@ const MakeDifferencePage = ({makeDifferenceData}) => {
                 {
                     makeDifferenceData?.makeDifferenceType?.map((item, index) => {
                         return (
-                            <div key={index} className="grid text-center h-[400px] w-full items-center shadow-md ring-[#EEE] ring-4  gap-[40px] border-b-2 border-[#EEE]">
+                            <div key={index} className="grid text-center h-full w-full items-center shadow-md ring-[#EEE] ring-4  gap-[40px] border-b-2 border-[#EEE]">
                                     <img className="w-full" src={item.img} alt="" />
                                     <div>
                                         <h1 className="font-bold text-[20px] text-[#0E286C] pt-[13px]">{item.title}</h1>
