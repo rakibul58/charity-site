@@ -1,4 +1,3 @@
-import React from 'react';
 
 
 
@@ -7,7 +6,7 @@ const JoinCommunity = ({ joinCommunityData }) => {
 
     return (
         <div
-            className='h-[500px] w-[100%] flex items-end'
+            className='h-[500px] w-[100%] flex items-end mt-[30px]'
             style={{
                 backgroundImage: `url(${joinCommunityData?.bgImage})`,
                 backgroundSize: 'cover',
