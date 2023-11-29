@@ -7,15 +7,23 @@ import {
 import "./index.css";
 import Layout from "./Pages/layout/Layout";
 import Home from "./Pages/Home/Home";
+import JoinCharity from "./Pages/JoinCharity/JoinCharity";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
-    children : [{
-      path: "/",
-      element: <Home></Home>,
-    }]
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/joinCharity",
+        element:<JoinCharity/>,
+      },
+
+    ]
   },
 ]);
 
