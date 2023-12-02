@@ -80,6 +80,7 @@ const Home = () => {
         joinCommunityData: {
             bgImage: bgImage,
         },
+
     }
     return (
         <div className="font-roboto">
