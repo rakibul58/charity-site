@@ -42,6 +42,7 @@ const CharityClasses = ({ charityClassesData }) => {
                 ))}
             </TabList>
 
+
             {charityClassesData?.categories?.map((category, index) => (
                 <TabPanel key={index}>
                     <Swiper
@@ -62,7 +63,7 @@ const CharityClasses = ({ charityClassesData }) => {
                     >
                         {category?.about?.map((item, i) => (
                             <SwiperSlide key={i}>
-                                <div className="relative mb-[70px] w-5/6 mx-auto mt-4 border rounded-md shadow-md h-[400px]">
+                                <div className="relative mb-[70px] w-5/6 mx-auto mt-4 border rounded-md shadow-md h-[450px]">
                                     <img className='h-[242px] w-full' src={item.img} alt={item.title} />
                                     <div className='w-11/12 mx-auto my-5'>
                                     <h3 className='text-[#0E286C] font-bold text-[20px]'>{item.title}</h3>
