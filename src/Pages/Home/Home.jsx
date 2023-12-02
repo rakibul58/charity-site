@@ -82,7 +82,7 @@ const Home = () => {
         },
     }
     return (
-        <div>
+        <div className="font-roboto">
             <HeroSection heroData={data.heroData} />
             <ConnectPage connectData={data.connectData}></ConnectPage>
             <CreateCharityPage createCharityData={data.createCharityData}></CreateCharityPage>
