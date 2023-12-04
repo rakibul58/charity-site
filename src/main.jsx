@@ -8,6 +8,9 @@ import "./index.css";
 import Layout from "./Pages/layout/Layout";
 import Home from "./Pages/Home/Home";
 import JoinCharity from "./Pages/JoinCharity/JoinCharity";
+import StudentsCharitiesHome from "./Pages/StudentsCharities/StudentsCharitiesHome";
+import ExperiencePersonHome from "./Pages/ExperiencePerson/ExperiencePersonHome";
+
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,15 @@ const router = createBrowserRouter([
         path: "/joinCharity",
         element:<JoinCharity/>,
       },
+      {
+        path: "/studentsCharities",
+        element:<StudentsCharitiesHome/>,
+      },
+      {
+        path: "/experiencePerson",
+        element:<ExperiencePersonHome/>,
+      },
+    
 
     ]
   },
