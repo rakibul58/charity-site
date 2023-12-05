@@ -10,6 +10,8 @@ import Home from "./Pages/Home/Home";
 import JoinCharity from "./Pages/JoinCharity/JoinCharity";
 import StudentsCharitiesHome from "./Pages/StudentsCharities/StudentsCharitiesHome";
 import ExperiencePersonHome from "./Pages/ExperiencePerson/ExperiencePersonHome";
+import BecomeMentorHome from "./Pages/BecomeMentor/BecomeMentorHome";
+import ShowcaseHome from "./Pages/Showcase/ShowcaseHome";
 
 
 const router = createBrowserRouter([
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: "/experiencePerson",
         element:<ExperiencePersonHome/>,
+      },
+      {
+        path: "/becomeMentor",
+        element:<BecomeMentorHome/>,
+      },
+      {
+        path: "/showcase",
+        element:<ShowcaseHome/>,
       },
     
 
