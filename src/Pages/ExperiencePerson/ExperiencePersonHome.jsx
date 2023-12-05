@@ -1,14 +1,8 @@
-//ExperiencePerson
-
-
 
 
 import Volunteer from "../../assets/StudentsCharities/Volunteer.png";
 import Estoy from "../../assets/StudentsCharities/Estoy.png";
 import safe from "../../assets/StudentsCharities/safe.png";
-
-
-
 
 import naturalCharity1 from "../../assets/JoinCharity/naturalcharity1.png";
 import naturalCharity2 from "../../assets/JoinCharity/naturalcharity2.png";
@@ -19,6 +13,7 @@ import AdvicePosts from "./AdvicePosts";
 import YourAdvice from "./YourAdvice";
 import GetEarlyAccess from "./GetEarlyAccess";
 import Questions from "./Questions";
+
 
 
 
