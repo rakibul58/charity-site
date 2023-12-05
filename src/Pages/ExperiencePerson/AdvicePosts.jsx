@@ -67,12 +67,16 @@ const AdvicePosts = ({ advicePostsData }) => {
                         >
                             {category?.about?.map((item, i) => (
                                 <SwiperSlide key={i}>
-                                    <div className="relative mb-[70px] w-5/6 mx-auto mt-4 border rounded-md shadow-md h-[420px]">
+                                    <div className="relative mb-[70px] h-full w-5/6 mx-auto mt-4 border rounded-md shadow-md ">
                                         <img className='h-[242px] w-full' src={item.img} alt={item.title} />
                                         <div className='w-11/12 mx-auto my-5'>
                                             <p className='text-[11px] font-semibold text-[#0E286C] '>{item?.type}</p>
                                             <h3 className='text-[#0E286C] font-bold text-[20px]'>{item.title}</h3>
-                                            <p className='text-[13px] w-[310px]'>{item.desc}</p>
+                                            {
+                                                item?.desc?.map((desc, i) => (
+                                                    <section key={i} className='flex gap-2 text-[16px] mt-2'><p>{i+1}.</p> <p>{desc}</p></section>
+                                                ))
+                                            }
                                             <div className='flex gap-4 mt-3 items-center'>
                                                 <img src={item.instructor[0]?.img} alt="" />
                                                 <div>
