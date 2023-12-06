@@ -1,6 +1,11 @@
 import ShowCaseFaqs from "./ShowCaseFaqs";
 import ShowCaseHero from "./ShowCaseHero";
-
+import orgImg1 from "../../assets/ShowCase/organisation1.png";
+import orgImg2 from "../../assets/ShowCase/organisation2.png";
+import orgImg3 from "../../assets/ShowCase/organisation3.png";
+import charity from "../../assets/ShowCase/charity-event.png";
+import OpportunitiesPage from "./OpportunitiesPage";
+import GetintouchPage from "./GetintouchPage";
 
 
 
@@ -51,15 +56,53 @@ const ShowcaseHome = () => {
                 ],
             }
 
-        }
+        },
+        opportunitiesData : {
+            title : 'Connect',
+            heading : "Unlock Opportunities and Learn from Experts",
+            subHeading : "Participating in our platform provides numerous benefits. Connect with experienced adults, network with like-minded individuals, learn from experts, and receive guidance to enhance your charity.",
+            opportunitiesTypes: [
+                {
+                    img: orgImg1,
+                    title: "Connect with Experienced Adults",
+                    desc: "Tap into the knowledge and experience of experienced adults who can provide valuable advice and guidance for your charity",
+                },
+                {
+                    img: orgImg2,
+                    title: "Expand Your Network",
+                    desc: "Connect with other students who are passionate about creating charities and build a network of like-minded individuals.",
+                },
+                {
+                    img: orgImg3,
+                    title: "Learn from Experts",
+                    desc: "Gain insights and knowledge from experts in various fields who can help you improve your charity and make a greater impact.",
+                },
+            ]
+        },
+        formData: {
+            title: "Submit",
+            heading: "Get in Touch",
+            desc: "Please fill out the form below to submit your charity project.",
+            sideImg: charity,
+            form: {
+                name: "Name",
+                mobile: "Mobile Number",
+                charity: "Charity Name",
+                details: "Details",
+                email: "Email",
+                btn1: "Help",
+                btn2: "Next",
+            }
+        },
 
 
     }
     return (
         <div className="font-roboto mx-[20px]">
             <ShowCaseHero showCaseHeroData={data?.showCaseHeroData}/>
-            <ShowCaseFaqs ShowCaseFaqsData={data?.ShowCaseFaqsData}/>
-                  
+            <OpportunitiesPage opportunitiesData={data?.opportunitiesData}></OpportunitiesPage>
+            <GetintouchPage formData={data?.formData}></GetintouchPage>
+            <ShowCaseFaqs ShowCaseFaqsData={data?.ShowCaseFaqsData}/> 
         </div>
     );
 };
